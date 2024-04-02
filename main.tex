@@ -1,0 +1,30 @@
+\documentclass[12pt]{extarticle}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage[colorlinks]{hyperref}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{graphicx}
+
+\setlist[enumerate]{label*=\arabic*.}
+
+\begin{document}
+\def\contentsname{Содержание}
+
+% Титульный лист
+\input{title}
+\newpage
+
+% Содержание
+%\tableofcontents
+\newpage
+
+% Текст работы
+\input{section0}
+\input{section1}
+\input{section2}
+
+\end{document}
